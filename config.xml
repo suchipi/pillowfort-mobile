@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.suchipi.PillowfortMobile" version="1.0.0"
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>Pillowfort</name>
+	<description>
+    A mobile webview wrapper for pillowfort.social.
+	</description>
+	<author email="pillowfort-mobile@suchipi.tv" href="http://suchipi.com">
+    Suchipi
+	</author>
+	<content src="index.html" />
+	<icon src="res/icon.png" />
+
+	<access origin="*" />
+
+	<!-- Allow links to web pages to open in a browser -->
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+
+	<!-- Allow links to example.com to open in a browser -->
+	<allow-intent href="http://example.com/*" />
+
+	<!-- Wildcards are allowed for the protocol, as a prefix
+     to the host, or as a suffix to the path -->
+	<allow-intent href="*://*.example.com/*" />
+
+	<!-- Allow SMS links to open messaging app -->
+	<allow-intent href="sms:*" />
+
+	<!-- Allow tel: links to open the dialer -->
+	<allow-intent href="tel:*" />
+
+	<!-- Allow geo: links to open maps -->
+	<allow-intent href="geo:*" />
+
+	<allow-navigation href="*" />
+	<allow-navigation href="data:*" />
+	<feature name="CDVWKWebViewEngine">
+		<param name="ios-package" value="CDVWKWebViewEngine" />
+	</feature>
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+	<preference name="AllowBackForwardNavigationGestures" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
+	<plugin name="cordova-plugin-whitelist" spec="1" />
+	<plugin name="cordova-plugin-wkwebview-engine" spec="~1.2.1" />
+</widget>

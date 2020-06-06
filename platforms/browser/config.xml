@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.suchipi.PillowfortMobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Pillowfort</name>
+    <description>
+    A mobile webview wrapper for pillowfort.social.
+	</description>
+    <author email="pillowfort-mobile@suchipi.tv" href="http://suchipi.com">
+    Suchipi
+	</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+</widget>
