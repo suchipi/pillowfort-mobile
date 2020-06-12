@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.suchipi.PillowfortMobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Pillowfort</name>
+    <description>
+    A mobile webview wrapper for pillowfort.social.
+	</description>
+    <author email="pillowfort-mobile@suchipi.tv" href="http://suchipi.com">
+    Suchipi
+	</author>
+    <content src="index.html" />
+    <icon src="res/icon.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="http://example.com/*" />
+    <allow-intent href="*://*.example.com/*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="AllowBackForwardNavigationGestures" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+</widget>
